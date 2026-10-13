@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Restmark Support</title>
+<meta name="description" content="Help and FAQ for the Restmark sleep app for iPhone.">
+<style>
+:root{--bg:#F6F5FB;--card:#fff;--text:#1c1b22;--muted:#5d5b6b;--accent:#5146D6;--line:#e4e2ef}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0e17;--card:#1b1a24;--text:#f2f1f7;--muted:#a9a7b8;--accent:#9d96ff;--line:#2d2b3a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+main{max-width:720px;margin:0 auto;padding:32px 20px 64px}
+header{margin-bottom:24px}
+header .app{font-weight:700;color:var(--accent);letter-spacing:.2px;text-decoration:none}
+h1{font-size:30px;line-height:1.2;margin:8px 0 4px}
+h2{font-size:21px;line-height:1.3;margin:34px 0 8px}
+h3{font-size:17px;margin:22px 0 4px}
+p,li{color:var(--text)}
+.muted{color:var(--muted);font-size:15px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:18px 0}
+.card ul{margin:6px 0 0;padding-left:20px}
+ul{padding-left:22px}
+li{margin:4px 0}
+a{color:var(--accent)}
+.placeholder{background:#fff3b0;color:#5b4500;padding:1px 6px;border-radius:6px;font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);text-align:left;padding:8px 6px;vertical-align:top}
+footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+nav a{margin-right:16px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:10px 0}
+summary{font-weight:600;cursor:pointer}
+details p,details ul{margin:10px 0 2px}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <a class="app" href="../">Restmark</a>
+  <h1>Support</h1>
+  <p class="muted">Help for Restmark, the private sleep-need and sleep-debt app for iPhone.</p>
+</header>
+
+<div class="card">
+  <strong>Contact</strong>
+  <p style="margin:6px 0 0">Email <a href="mailto:altezlansing@gmail.com">altezlansing@gmail.com</a>. Please include your iPhone model, iOS version, the Restmark version (Settings › About) and which device records your sleep (Apple Watch, Fitbit, other).</p>
+</div>
+
+<h2>Frequently asked questions</h2>
+
+<details><summary>What do I need to use Restmark?</summary>
+<p>An iPhone with iOS 17 or later and sleep data in Apple Health, for example from an Apple Watch, or from a Fitbit or other tracker whose app syncs sleep into Apple Health. Sleep stages, heart rate variability (HRV) and resting heart rate appear only if your device records them.</p></details>
+
+<details><summary>Restmark says it can’t see any sleep yet.</summary>
+<ul>
+  <li>Open iPhone Settings › Health › Data Access &amp; Devices › Restmark and turn on Sleep, Heart Rate Variability and Resting Heart Rate.</li>
+  <li>Check that the Health app shows sleep (Health › Browse › Sleep).</li>
+  <li>Using Fitbit? Open your Fitbit/sync app so it writes last night’s sleep into Apple Health, then pull down on Restmark’s Today screen to refresh.</li>
+</ul></details>
+
+<details><summary>Why does Readiness say “Sleep only”?</summary>
+<p>Readiness compares HRV during sleep and resting heart rate with your own baselines, plus last night’s sleep against your need. If a night has no HRV or resting heart rate in Apple Health (common for Fitbit nights), Readiness is based on sleep alone.</p></details>
+
+<details><summary>How does Restmark learn my sleep need?</summary>
+<p>It looks at “free nights”, when you woke well past your usual wake time or slept in on a weekend or one of your Regular Days-Off, and estimates how long you sleep when nothing cuts it short. Until it has enough free nights it shows “Still learning” and uses a default. You can set a custom sleep need in Settings › Sleep Data, and mark your regular days off there too.</p></details>
+
+<details><summary>How are Ideal Bedtime and Latest Bedtime calculated?</summary>
+<p><strong>Ideal Bedtime</strong> = your wake-up time minus your sleep need, a share of your current sleep debt, and the time you usually take to fall asleep. <strong>Latest Bedtime to Stay on Track</strong> is the latest time you can go to bed without adding sleep debt (wake-up time minus sleep need minus time to fall asleep). Change tomorrow’s wake-up time on the Sleep Plan tab.</p></details>
+
+<details><summary>A night looks wrong. Can I fix it?</summary>
+<p>Open the night (tap Last Night on Today, or Trends › Nights) to trim its start or end, or turn on “Exclude this night” for sick nights or bad data. These changes are stored only in Restmark; Apple Health is never changed. Review or undo them in Settings › Sleep Data › Data Corrections.</p></details>
+
+<details><summary>Notifications don’t arrive.</summary>
+<p>Allow notifications in Restmark’s Settings and in iPhone Settings › Notifications › Restmark. Notifications are scheduled on your iPhone and refreshed when you open Restmark, so open the app now and then (ideally after you wake) for accurate numbers.</p></details>
+
+<details><summary>The widget shows “Open Restmark”.</summary>
+<p>Open the Restmark app once so it can prepare the widget’s summary. The widget shows what Restmark calculated the last time it ran.</p></details>
+
+<details><summary>Does Restmark upload or share my data?</summary>
+<p>No. Everything is processed on your iPhone. Restmark has no servers, accounts, analytics, ads or tracking, and it only reads from Apple Health, never writes. See the <a href="../privacy-policy/">Privacy Policy</a>.</p></details>
+
+<details><summary>How do I delete my data?</summary>
+<p>Delete the Restmark app. This removes everything Restmark stored. Your original data in Apple Health is not affected. To stop Restmark reading Health without deleting it, turn access off in Settings › Health › Data Access &amp; Devices › Restmark.</p></details>
+
+<details><summary>Is Restmark a medical device?</summary>
+<p>No. Restmark is for general wellness and self-insight. It does not diagnose or treat any condition, and its scores are estimates. Talk to a doctor about any sleep or health concern.</p></details>
+
+<footer><nav><a href="../">Home</a><a href="../privacy-policy/">Privacy Policy</a></nav><p>© 2026 Davide Rosso</p></footer>
+</main>
+</body>
+</html>
